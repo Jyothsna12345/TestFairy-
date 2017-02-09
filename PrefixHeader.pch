@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  MySimplicty
+//
+//  Created by Jyoshna Ottikunta on 23/01/17.
+//  Copyright © 2017 vmoksha mobility. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "TestFairy.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#define NSLog(s, ...) do { NSLog(s, ##__VA_ARGS__); TFLog(s, ##__VA_ARGS__); } while (0)

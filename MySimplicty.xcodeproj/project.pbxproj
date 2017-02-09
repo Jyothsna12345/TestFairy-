@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51A5FBC51E31E76C0060C165 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5FBC41E31E76C0060C165 /* CoreMedia.framework */; };
+		51A5FBC71E31E7780060C165 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5FBC61E31E7780060C165 /* CoreMotion.framework */; };
+		51A5FBC91E31E7840060C165 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5FBC81E31E7840060C165 /* AVFoundation.framework */; };
+		51A5FBCB1E31E7910060C165 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5FBCA1E31E7910060C165 /* SystemConfiguration.framework */; };
+		51A5FBCD1E31E79D0060C165 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5FBCC1E31E79D0060C165 /* OpenGLES.framework */; };
+		51CA28731E35D07B00CE3052 /* libTestFairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA28701E35D07B00CE3052 /* libTestFairy.a */; };
+		51CA28741E35D07B00CE3052 /* upload-dsym.sh in Resources */ = {isa = PBXBuildFile; fileRef = 51CA28721E35D07B00CE3052 /* upload-dsym.sh */; };
+		CD25AF271E2DEFC1001D7657 /* DashBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD25AF261E2DEFC1001D7657 /* DashBoardCell.m */; };
+		CD5112421E2DD1E9001856F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5112411E2DD1E9001856F1 /* main.m */; };
+		CD5112451E2DD1E9001856F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5112441E2DD1E9001856F1 /* AppDelegate.m */; };
+		CD5112481E2DD1E9001856F1 /* DashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5112471E2DD1E9001856F1 /* DashBoardViewController.m */; };
+		CD51124B1E2DD1E9001856F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5112491E2DD1E9001856F1 /* Main.storyboard */; };
+		CD51124D1E2DD1E9001856F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD51124C1E2DD1E9001856F1 /* Assets.xcassets */; };
+		CD5112501E2DD1E9001856F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD51124E1E2DD1E9001856F1 /* LaunchScreen.storyboard */; };
+		CD51125B1E2DD1E9001856F1 /* MySimplictyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD51125A1E2DD1E9001856F1 /* MySimplictyTests.m */; };
+		CD5112661E2DD1E9001856F1 /* MySimplictyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5112651E2DD1E9001856F1 /* MySimplictyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		51CA28771E35DCB300CE3052 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.swift;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# $(SWIFT_EXEC)\n/Users/jyoshna/Desktop/MySimplicty/Bridging.h";
+		};
+		51D5D9951E3228E3004DB7DE /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.swift;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# $(SWIFT_EXEC)\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		CD5112571E2DD1E9001856F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5112351E2DD1E9001856F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD51123C1E2DD1E9001856F1;
+			remoteInfo = MySimplicty;
+		};
+		CD5112621E2DD1E9001856F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5112351E2DD1E9001856F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD51123C1E2DD1E9001856F1;
+			remoteInfo = MySimplicty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51A5FBC41E31E76C0060C165 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		51A5FBC61E31E7780060C165 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		51A5FBC81E31E7840060C165 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51A5FBCA1E31E7910060C165 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		51A5FBCC1E31E79D0060C165 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		51CA28701E35D07B00CE3052 /* libTestFairy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFairy.a; sourceTree = "<group>"; };
+		51CA28711E35D07B00CE3052 /* TestFairy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFairy.h; sourceTree = "<group>"; };
+		51CA28721E35D07B00CE3052 /* upload-dsym.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "upload-dsym.sh"; sourceTree = "<group>"; };
+		51CA28751E35D89500CE3052 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		51CA28761E35DAEB00CE3052 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		CD25AF251E2DEFC0001D7657 /* DashBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashBoardCell.h; sourceTree = "<group>"; };
+		CD25AF261E2DEFC1001D7657 /* DashBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashBoardCell.m; sourceTree = "<group>"; };
+		CD51123D1E2DD1E9001856F1 /* MySimplicty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySimplicty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5112411E2DD1E9001856F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD5112431E2DD1E9001856F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD5112441E2DD1E9001856F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD5112461E2DD1E9001856F1 /* DashBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashBoardViewController.h; sourceTree = "<group>"; };
+		CD5112471E2DD1E9001856F1 /* DashBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashBoardViewController.m; sourceTree = "<group>"; };
+		CD51124A1E2DD1E9001856F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD51124C1E2DD1E9001856F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD51124F1E2DD1E9001856F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5112511E2DD1E9001856F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5112561E2DD1E9001856F1 /* MySimplictyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySimplictyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD51125A1E2DD1E9001856F1 /* MySimplictyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySimplictyTests.m; sourceTree = "<group>"; };
+		CD51125C1E2DD1E9001856F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5112611E2DD1E9001856F1 /* MySimplictyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySimplictyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5112651E2DD1E9001856F1 /* MySimplictyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySimplictyUITests.m; sourceTree = "<group>"; };
+		CD5112671E2DD1E9001856F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD51123A1E2DD1E9001856F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51A5FBCD1E31E79D0060C165 /* OpenGLES.framework in Frameworks */,
+				51CA28731E35D07B00CE3052 /* libTestFairy.a in Frameworks */,
+				51A5FBCB1E31E7910060C165 /* SystemConfiguration.framework in Frameworks */,
+				51A5FBC91E31E7840060C165 /* AVFoundation.framework in Frameworks */,
+				51A5FBC71E31E7780060C165 /* CoreMotion.framework in Frameworks */,
+				51A5FBC51E31E76C0060C165 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5112531E2DD1E9001856F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD51125E1E2DD1E9001856F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51A5FBC31E31E76C0060C165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51A5FBCC1E31E79D0060C165 /* OpenGLES.framework */,
+				51A5FBCA1E31E7910060C165 /* SystemConfiguration.framework */,
+				51A5FBC81E31E7840060C165 /* AVFoundation.framework */,
+				51A5FBC61E31E7780060C165 /* CoreMotion.framework */,
+				51A5FBC41E31E76C0060C165 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51CA286F1E35D06900CE3052 /* TestFairy */ = {
+			isa = PBXGroup;
+			children = (
+				51CA28701E35D07B00CE3052 /* libTestFairy.a */,
+				51CA28711E35D07B00CE3052 /* TestFairy.h */,
+				51CA28721E35D07B00CE3052 /* upload-dsym.sh */,
+			);
+			name = TestFairy;
+			sourceTree = "<group>";
+		};
+		CD5112341E2DD1E9001856F1 = {
+			isa = PBXGroup;
+			children = (
+				51CA28761E35DAEB00CE3052 /* Bridging.h */,
+				51CA28751E35D89500CE3052 /* PrefixHeader.pch */,
+				CD51123F1E2DD1E9001856F1 /* MySimplicty */,
+				CD5112591E2DD1E9001856F1 /* MySimplictyTests */,
+				CD5112641E2DD1E9001856F1 /* MySimplictyUITests */,
+				CD51123E1E2DD1E9001856F1 /* Products */,
+				51A5FBC31E31E76C0060C165 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD51123E1E2DD1E9001856F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD51123D1E2DD1E9001856F1 /* MySimplicty.app */,
+				CD5112561E2DD1E9001856F1 /* MySimplictyTests.xctest */,
+				CD5112611E2DD1E9001856F1 /* MySimplictyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD51123F1E2DD1E9001856F1 /* MySimplicty */ = {
+			isa = PBXGroup;
+			children = (
+				51CA286F1E35D06900CE3052 /* TestFairy */,
+				CD5112431E2DD1E9001856F1 /* AppDelegate.h */,
+				CD5112441E2DD1E9001856F1 /* AppDelegate.m */,
+				CD5112461E2DD1E9001856F1 /* DashBoardViewController.h */,
+				CD5112471E2DD1E9001856F1 /* DashBoardViewController.m */,
+				CD25AF251E2DEFC0001D7657 /* DashBoardCell.h */,
+				CD25AF261E2DEFC1001D7657 /* DashBoardCell.m */,
+				CD5112491E2DD1E9001856F1 /* Main.storyboard */,
+				CD51124C1E2DD1E9001856F1 /* Assets.xcassets */,
+				CD51124E1E2DD1E9001856F1 /* LaunchScreen.storyboard */,
+				CD5112511E2DD1E9001856F1 /* Info.plist */,
+				CD5112401E2DD1E9001856F1 /* Supporting Files */,
+			);
+			path = MySimplicty;
+			sourceTree = "<group>";
+		};
+		CD5112401E2DD1E9001856F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5112411E2DD1E9001856F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5112591E2DD1E9001856F1 /* MySimplictyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD51125A1E2DD1E9001856F1 /* MySimplictyTests.m */,
+				CD51125C1E2DD1E9001856F1 /* Info.plist */,
+			);
+			path = MySimplictyTests;
+			sourceTree = "<group>";
+		};
+		CD5112641E2DD1E9001856F1 /* MySimplictyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5112651E2DD1E9001856F1 /* MySimplictyUITests.m */,
+				CD5112671E2DD1E9001856F1 /* Info.plist */,
+			);
+			path = MySimplictyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD51123C1E2DD1E9001856F1 /* MySimplicty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD51126A1E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplicty" */;
+			buildPhases = (
+				CD5112391E2DD1E9001856F1 /* Sources */,
+				CD51123A1E2DD1E9001856F1 /* Frameworks */,
+				CD51123B1E2DD1E9001856F1 /* Resources */,
+			);
+			buildRules = (
+				51CA28771E35DCB300CE3052 /* PBXBuildRule */,
+				51D5D9951E3228E3004DB7DE /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = MySimplicty;
+			productName = MySimplicty;
+			productReference = CD51123D1E2DD1E9001856F1 /* MySimplicty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD5112551E2DD1E9001856F1 /* MySimplictyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD51126D1E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplictyTests" */;
+			buildPhases = (
+				CD5112521E2DD1E9001856F1 /* Sources */,
+				CD5112531E2DD1E9001856F1 /* Frameworks */,
+				CD5112541E2DD1E9001856F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5112581E2DD1E9001856F1 /* PBXTargetDependency */,
+			);
+			name = MySimplictyTests;
+			productName = MySimplictyTests;
+			productReference = CD5112561E2DD1E9001856F1 /* MySimplictyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD5112601E2DD1E9001856F1 /* MySimplictyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5112701E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplictyUITests" */;
+			buildPhases = (
+				CD51125D1E2DD1E9001856F1 /* Sources */,
+				CD51125E1E2DD1E9001856F1 /* Frameworks */,
+				CD51125F1E2DD1E9001856F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5112631E2DD1E9001856F1 /* PBXTargetDependency */,
+			);
+			name = MySimplictyUITests;
+			productName = MySimplictyUITests;
+			productReference = CD5112611E2DD1E9001856F1 /* MySimplictyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5112351E2DD1E9001856F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "vmoksha mobility";
+				TargetAttributes = {
+					CD51123C1E2DD1E9001856F1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QGMN7468R5;
+						ProvisioningStyle = Automatic;
+					};
+					CD5112551E2DD1E9001856F1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD51123C1E2DD1E9001856F1;
+					};
+					CD5112601E2DD1E9001856F1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD51123C1E2DD1E9001856F1;
+					};
+				};
+			};
+			buildConfigurationList = CD5112381E2DD1E9001856F1 /* Build configuration list for PBXProject "MySimplicty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD5112341E2DD1E9001856F1;
+			productRefGroup = CD51123E1E2DD1E9001856F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD51123C1E2DD1E9001856F1 /* MySimplicty */,
+				CD5112551E2DD1E9001856F1 /* MySimplictyTests */,
+				CD5112601E2DD1E9001856F1 /* MySimplictyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD51123B1E2DD1E9001856F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5112501E2DD1E9001856F1 /* LaunchScreen.storyboard in Resources */,
+				CD51124D1E2DD1E9001856F1 /* Assets.xcassets in Resources */,
+				CD51124B1E2DD1E9001856F1 /* Main.storyboard in Resources */,
+				51CA28741E35D07B00CE3052 /* upload-dsym.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5112541E2DD1E9001856F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD51125F1E2DD1E9001856F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5112391E2DD1E9001856F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5112481E2DD1E9001856F1 /* DashBoardViewController.m in Sources */,
+				CD5112451E2DD1E9001856F1 /* AppDelegate.m in Sources */,
+				CD25AF271E2DEFC1001D7657 /* DashBoardCell.m in Sources */,
+				CD5112421E2DD1E9001856F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5112521E2DD1E9001856F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD51125B1E2DD1E9001856F1 /* MySimplictyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD51125D1E2DD1E9001856F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5112661E2DD1E9001856F1 /* MySimplictyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD5112581E2DD1E9001856F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD51123C1E2DD1E9001856F1 /* MySimplicty */;
+			targetProxy = CD5112571E2DD1E9001856F1 /* PBXContainerItemProxy */;
+		};
+		CD5112631E2DD1E9001856F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD51123C1E2DD1E9001856F1 /* MySimplicty */;
+			targetProxy = CD5112621E2DD1E9001856F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5112491E2DD1E9001856F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD51124A1E2DD1E9001856F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD51124E1E2DD1E9001856F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD51124F1E2DD1E9001856F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5112681E2DD1E9001856F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/jyoshna/Desktop/MySimplicty/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5112691E2DD1E9001856F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/jyoshna/Desktop/MySimplicty/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD51126B1E2DD1E9001856F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QGMN7468R5;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = MySimplicty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySimplicty",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD51126C1E2DD1E9001856F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QGMN7468R5;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = MySimplicty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySimplicty",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.VNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD51126E1E2DD1E9001856F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MySimplictyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.EmailTemplate.MySimplictyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySimplicty.app/MySimplicty";
+			};
+			name = Debug;
+		};
+		CD51126F1E2DD1E9001856F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MySimplictyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.EmailTemplate.MySimplictyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySimplicty.app/MySimplicty";
+			};
+			name = Release;
+		};
+		CD5112711E2DD1E9001856F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MySimplictyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.EmailTemplate.MySimplictyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MySimplicty;
+			};
+			name = Debug;
+		};
+		CD5112721E2DD1E9001856F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MySimplictyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.EmailTemplate.MySimplictyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MySimplicty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5112381E2DD1E9001856F1 /* Build configuration list for PBXProject "MySimplicty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5112681E2DD1E9001856F1 /* Debug */,
+				CD5112691E2DD1E9001856F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD51126A1E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplicty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD51126B1E2DD1E9001856F1 /* Debug */,
+				CD51126C1E2DD1E9001856F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD51126D1E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplictyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD51126E1E2DD1E9001856F1 /* Debug */,
+				CD51126F1E2DD1E9001856F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5112701E2DD1E9001856F1 /* Build configuration list for PBXNativeTarget "MySimplictyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5112711E2DD1E9001856F1 /* Debug */,
+				CD5112721E2DD1E9001856F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5112351E2DD1E9001856F1 /* Project object */;
+}
